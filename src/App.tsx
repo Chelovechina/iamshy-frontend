@@ -1,11 +1,5 @@
-import Register from "./pages/register/Register";
-
 function App() {
-  return (
-    <div>
-      <Register />
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
