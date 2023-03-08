@@ -1,9 +1,12 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Login from "./pages/login/Login";
 
 function App() {
   return (
-    <h1>Hello world!</h1>
-  ) 
+    <div>
+      <Login />
+    </div>
+  );
 }
 
-export default App
+export default App;
