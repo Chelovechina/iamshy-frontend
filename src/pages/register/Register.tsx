@@ -7,25 +7,25 @@ const Register: FC = () => {
     <div className="register">
       <div className="card">
         <div className="left">
-          <h1>Lama Social.</h1>
+          <h1>I'am Shy.</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero cum,
             alias totam numquam ipsa exercitationem dignissimos, error nam,
             consequatur.
           </p>
-          <span>Do you have an account?</span>
+          <span>Уже существует аккаунт?</span>
           <Link to="/login">
-            <button>Login</button>
+            <button>Войти</button>
           </Link>
         </div>
         <div className="right">
-          <h2>Register</h2>
+          <h2>Регистрация</h2>
           <form>
-            <input type="text" placeholder="Username" />
+            <input type="text" placeholder="Логин" />
             <input type="email" placeholder="Email" />
-            <input type="password" placeholder="Password" />
-            <input type="text" placeholder="Name" />
-            <button>Register</button>
+            <input type="password" placeholder="Пароль" />
+            <input type="text" placeholder="Имя" />
+            <button>Зарегистрироваться</button>
           </form>
         </div>
       </div>
