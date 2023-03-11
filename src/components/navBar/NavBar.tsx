@@ -1,4 +1,4 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { Link } from "react-router-dom";
 
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
@@ -13,9 +13,12 @@ import SearchOutlineIcon from "@mui/icons-material/SearchOutlined";
 import "./navBar.scss";
 import userImg from "./../../assets/login.jpeg";
 
-const NavBar: FC = () => {
-  const [isDark, setIsDark] = useState<boolean>(false);
+interface NavBarProps {
+  isDark: boolean;
+  handleClick: () => void;
+}
 
+const NavBar: FC<NavBarProps> = ({ isDark, handleClick }) => {
   return (
     <div className="navBar">
       <div className="left">
@@ -23,7 +26,7 @@ const NavBar: FC = () => {
           <span>I'am shy</span>
         </Link>
         <HomeOutlinedIcon />
-        {isDark ? <WbSunnyOutlinedIcon /> : <DarkModeOutlinedIcon />}
+        {isDark ? <WbSunnyOutlinedIcon onClick={handleClick} /> : <DarkModeOutlinedIcon onClick={handleClick} />}
         <GridViewOutlineIcon />
         <div className="search">
           <SearchOutlineIcon />

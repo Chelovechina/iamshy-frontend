@@ -1,12 +1,8 @@
-import { FC } from "react"
-import "./home.scss" 
+import { FC } from "react";
+import "./home.scss";
 
 const Home: FC = () => {
-  return (
-    <div className="">
-      Home
-    </div>
-  )
-}
+  return <div className="home"></div>;
+};
 
-export default Home
+export default Home;
