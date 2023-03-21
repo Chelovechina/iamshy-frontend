@@ -11,7 +11,6 @@ const Layout: FC = () => {
 
   const handleClick = () => {
     setIsDark(!isDark);
-    console.log(isDark);
   };
 
   useEffect(() => {
