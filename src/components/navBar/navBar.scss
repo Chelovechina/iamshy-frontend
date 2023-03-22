@@ -12,6 +12,7 @@
     height: 50px;
     border-bottom: 1px solid themed("border");
     color: themed("textColor");
+    z-index: 999;
 
     .left {
       display: flex;

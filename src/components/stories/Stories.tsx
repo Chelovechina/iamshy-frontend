@@ -1,10 +1,10 @@
 import { FC } from "react";
-import { Story } from "../../types/types";
+import { StoryType } from "../../types/types";
 import "./stories.scss";
 import storyImg from "./../../assets/login.jpeg";
 
 const Stories: FC = () => {
-  const stories: Story[] = [
+  const stories: StoryType[] = [
     {
       id: 1,
       name: "Иван Иванов",
@@ -35,8 +35,8 @@ const Stories: FC = () => {
         <button>+</button>
       </div>
 
-      {stories.map((story: Story) => (
-        <div className="story">
+      {stories.map((story: StoryType) => (
+        <div className="story" key={story.id}>
           <img src={story.img} alt={`story of ${story.name}`} />
           <span>{story.name}</span>
         </div>
