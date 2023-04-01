@@ -6,7 +6,7 @@ import RightBar from "./rightBar/RightBar";
 
 const Layout: FC = () => {
   const [isDark, setIsDark] = useState<boolean>(
-    Boolean(localStorage.getItem("darkMode")) || false
+    localStorage.getItem("darkMode") === "true" ? true : false
   );
 
   const handleClick = () => {
